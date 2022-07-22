@@ -1,0 +1,40 @@
+<script src="/public/login.js" defer></script>
+
+<body>
+    <ul class="menu">
+        <li><a href="http://www2.spse.1984.cz/">Home</a></li>
+        <li class="active-right"><a href="http://www2.spse.1984.cz/login" style="color: #111;">Login</a></li>
+        <li class="right"><a href="http://www2.spse.1984.cz/register" style="color: white;">Register</a></li>
+    </ul>
+
+    <div class="container">
+        <form action="/login" method="post" class="login">
+            <label>Email: </label>
+            <input type="email" placeholder="Enter Email" name="email" class="email" required>
+            <label>Password: </label>
+            <button type="button" class="button-pass-show" onclick="showPass()"><img id="icon"
+                    src="public/img/eye_closed.svg" /></button>
+            <input type="password" placeholder="Enter Password" name="pass" id="pass" class="password" required>
+            <div style="display: flex;justify-content: center;">
+            <button class="button-login" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <% if(messages.error){ %>
+        <div class="errordiv">
+            <div class="errorpic">
+                <img src="public/img/warning.svg" style="height: 3vh;"></img>
+            </div>
+
+            <div class="errormsg">
+                <p style="font-size: 3vh; margin: 0;">
+                <%= messages.error %>
+                </p>
+            </div>
+        </div>
+
+        <% } %>
+</body>
+
+</html>

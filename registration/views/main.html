@@ -1,0 +1,67 @@
+<script src="/public/main.js" defer></script>
+<body onload="currentdate();">
+            <ul class="menu">
+              <li><a class="active" href="http://www2.spse.1984.cz/">Home</a></li>
+              <% if(typeof (user) != "undefined") { %>
+                <li class="right"><a href="http://www2.spse.1984.cz/profile">Profile</a></li>
+                <% } else { %>
+              <li class="right"><a href="http://www2.spse.1984.cz/login">Login</a></li>
+              <% } %>
+            </ul>
+        <div id="flex1">
+            <div id="flex1-1">
+                <p id="date"></p>
+            </div>
+            <div id="flex1-2">
+                <div id="event1" class="events">
+                    <div class="image-main"><img src="/public/img/battle.jpg" class="preview"></div>
+                    <div class="text">
+                        <div class="text-text">The Final Showdown</div>
+                        <div class="text-desc">Epic, Revolution</div>
+                        <div><button class="button-main" onclick='location.href="http://www2.spse.1984.cz/seats/0"' >Buy</button></div>
+                    </div>
+                </div>
+                <div id="event1" class="events">
+                    <div class="image-main"><img src="/public/img/marsh.jpg" class="preview"></div>
+                    <div class="text">
+                        <div class="text-text">Marshmello event</div>
+                        <div class="text-desc">Epic, Revolution</div>
+                        <div><button class="button-main" onclick='location.href="http://www2.spse.1984.cz/seats/1"'>Buy</button></div>
+                    </div>
+                </div>
+                <div id="event1" class="events">
+                    <div class="image-main"><img src="/public/img/theend.jpg" class="preview"></div>
+                    <div class="text">
+                        <div class="text-text">The End</div>
+                        <div class="text-desc">Epic, Revolution</div>
+                        <div><button class="button-main">Buy</button></div>
+                    </div>
+                </div>
+                <div id="event1" class="events">
+                    <div class="image-main"><img src="/public/img/battle.jpg" class="preview"></div>
+                    <div class="text">
+                        <div class="text-text">The Final Showdown</div>
+                        <div class="text-desc">Epic, Revolution</div>
+                        <div><button class="button-main">Buy</button></div>
+                    </div>
+                </div>
+                <div id="event1" class="events">
+                    <div class="image-main"><img src="/public/img/battle.jpg" class="preview"></div>
+                    <div class="text">
+                        <div class="text-text">The Final Showdown</div>
+                        <div class="text-desc">Epic, Revolution</div>
+                        <div><button class="button-main">Buy</button></div>
+                    </div>
+                </div>
+                <div id="event1" class="events">
+                    <div class="image-main"><img src="/public/img/battle.jpg" class="preview"></div>
+                    <div class="text">
+                        <div class="text-text">The Final Showdown</div>
+                        <div class="text-desc">Epic, Revolution</div>
+                        <div><button class="button-main">Buy</button></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+</body>
+</html>

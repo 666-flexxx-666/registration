@@ -1,0 +1,31 @@
+<ul class="menu">
+    <li><a href="http://www2.spse.1984.cz/">Home</a></li>
+    <li class="active-right"><a href="http://www2.spse.1984.cz/profile" style="color: #111;">Profile</a></li>
+</ul>
+
+<div class="profile-container">
+    <div class="profile">
+        <div>
+            <h1>PROFILE</h1>
+        </div>
+
+        <div class="name">
+            <p style="font-size:xx-large;font-family: rubik;margin-bottom: 0px;">
+                Your email:
+                <br>
+            </p>
+            <p style="font-size:xx-large;margin-top: 0px">
+                <%=name%>
+            </p>
+            <div class="bought">
+                <p>Your items:</p>
+
+            </div>
+        </div>
+        <div class="profile-logout">
+            <form action="/logout?_method=GET" method="POST">
+                <button class="button-login" style="width: 15vh;" type="submit">Log Out</button>
+            </form>
+        </div>
+    </div>
+</div>

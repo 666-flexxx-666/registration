@@ -1,0 +1,24 @@
+<script src="/public/javascript2.js" defer></script>
+
+<body onload="makeObjectGrid();">
+    <div id="body">
+        <h1></h1>
+        <ul class="menu">
+            <li><a href="http://www2.spse.1984.cz/">Home</a></li>
+            <% if(typeof (user) != "undefined") { %>
+                <li class="right"><a href="http://www2.spse.1984.cz/profile">Profile</a></li>
+                <% } else { %>
+              <li class="right"><a href="http://www2.spse.1984.cz/login">Login</a></li>
+              <% } %>
+          </ul>
+        <div id="all">
+            <div id="grid">
+                <div id="grid-container">
+                </div>
+                <button class="button-seats" onclick="sendSelected()">BUY</button>
+            </div>
+        </div>
+    </div> 
+    
+</body>
+</html>
